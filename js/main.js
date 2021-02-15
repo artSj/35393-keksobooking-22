@@ -6,7 +6,7 @@ const generateIntegralNum = (min, max) => {
 
   if (max < min) {
 
-    console.log('Error! Please, write correct max number');
+    return 'Error! Please, write correct max number';
 
   } else {
 
@@ -31,7 +31,7 @@ const generateNonIntegralNum = (min, max, numAfterPoint) => {
 
   if (max < min) {
 
-    console.log('Error! Please, write correct max number');
+    return 'Error! Please, write correct max number';
 
   } else {
 
@@ -43,7 +43,7 @@ const generateNonIntegralNum = (min, max, numAfterPoint) => {
 
       if (numAfterPoint < 1) {
 
-        console.log('Error! Please, write correct numAfterPoint');
+        return 'Error! Please, write correct numAfterPoint';
 
       } else {
 
@@ -59,6 +59,8 @@ const generateNonIntegralNum = (min, max, numAfterPoint) => {
 
 };
 
-console.log(generateIntegralNum(5, 7));
+generateIntegralNum(5, 7);
 
-console.log(generateNonIntegralNum(2.1, 3.2, 4))
+generateNonIntegralNum(1.2, 1.5, 3);
+
+
