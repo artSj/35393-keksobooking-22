@@ -52,7 +52,7 @@ const findDotNum = (num) => {
     }
   }
 
-  return 0;
+  return 'Error! There is no dot';
 }
 
 // Создание случайных чисел с плавающей точкой после запятой
@@ -72,7 +72,7 @@ const generateNonIntegralNum = (min, max, numAfterPoint) => {
   }
 
   const nonIntegralNum = (min + Math.random() * (max - min)).toString();
-  const numBeforePoint = findDotNum(nonIntegralNum)
+  const numBeforePoint = findDotNum(nonIntegralNum);
   return Number(nonIntegralNum.slice(0, numBeforePoint + numAfterPoint));
 }
 
